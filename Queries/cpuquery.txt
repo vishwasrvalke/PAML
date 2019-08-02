@@ -1,0 +1,2 @@
+search index=nmon host=losatlaps22  | bucket _time span=1h |  stats avg(cpu_user_percent) by _time
+search index=nmon host=losatlaps23 | bucket _time span=1h|  stats avg(cpu_user_percent) by _time 
